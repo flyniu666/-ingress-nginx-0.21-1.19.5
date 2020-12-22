@@ -1,5 +1,5 @@
 BUILD:
-
+```bash
 
 cd images/nginx/
 make
@@ -14,3 +14,4 @@ make
 
 echo -e '\n\n\n\n\n'
 docker images|grep  ingress-nginx
+```
