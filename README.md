@@ -1,6 +1,6 @@
 BUILD:
 ```bash
-
+cd ./-ingress-nginx-0.21-1.19.5
 cd images/nginx/
 make
 cd  -
