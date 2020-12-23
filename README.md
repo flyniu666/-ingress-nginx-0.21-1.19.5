@@ -5,10 +5,10 @@ cd images/nginx/
 make
 cd  -
 cd images/e2e/
-make
+make docker-build
 cd -
 e2e_tag=`docker images|grep e2e|awk {'print  $2'}`
-sed -i "s/e2e:11111111/e2e:$e2e_tag/" build/go-in-docker.sh
+sed -i "s/e2e:v11162018-ef7143f5a/e2e:$e2e_tag/" build/go-in-docker.sh
 make
 
 
